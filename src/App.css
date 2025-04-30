@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.home-container {
+  background-image: url("./keyboard.png") ;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   color: white;
+  font-family: sans-serif;
+  position: relative;
+
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 25px;
+}
+
+.content {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+
+  transform: translateY(-50%);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 80%;
+}
+
+.cap-icon {
+  font-size: 200px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.highlight {
+  color: #4db8ff;
 }
